@@ -1,0 +1,26 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+
+.main-nav{
+    background-color: antiquewhite;
+    height: 95px;
+    padding:0%;
+}
+
+.Menus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    display: flex;
+    justify-content: flex-end;
+}
