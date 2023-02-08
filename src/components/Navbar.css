@@ -6,7 +6,6 @@
 
 .title {
     margin-left: 2rem;
-    color: #31493C;
 }
 
 li {
@@ -15,7 +14,7 @@ li {
 
 .main-nav {
     display: flex;
-    background-color: #64A672;
+    background-color: antiquewhite;
     height: 70px;
     justify-content: space-between;
     align-items: center;
@@ -24,11 +23,21 @@ li {
 .nav_item {
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
+    color:black;
+
 }
 
 .nav_item li {
     margin: 1rem;
+    color:black;
 }
+
+.nav_item li a {
+    /* margin: 1rem; */
+    color:black;
+}
+
 .hover_item:hover{
     color: red;
 }
@@ -47,6 +56,51 @@ li {
 .Menus {
     display: flex;
     flex-direction: row;
-
-
 }
+
+/* Dropdown */
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    /* font-family: inherit; Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+    
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:antiquewhite;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
