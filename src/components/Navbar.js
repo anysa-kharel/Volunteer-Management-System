@@ -14,26 +14,26 @@ const Navbar=()=>{
             </div>
 
             <div className="Menus">
-                <ul>
+                <ul className="nav_item">
                     <li>
-                    <Link > Voluntering Opportunities</Link>
+                    <Link className="no_underline hover_item" > Voluntering Opportunities</Link>
                     </li>
                     <li>
-                    <Link to="/about"> About Us</Link>
+                    <Link className="no_underline hover_item" to="/about"> About Us</Link>
                     </li>
                     <li>
-                    <Link to="/contact"> Contact Us </Link>
+                    <Link className="no_underline hover_item" to="/contact"> Contact Us </Link>
                     </li>
                 </ul>
             </div>
 
             <div className="login">
-                 <ul>
+                 <ul className="log-in">
                     <li>
-                        <Link to="/login">Login <BiUser/></Link>
+                        <Link className="no_underline hover_item" to="/login">Login <BiUser/></Link>
                     </li>
                     <li>
-                        <Link to="/signup">Signup <AiOutlineUserAdd/></Link>
+                        <Link className="no_underline hover_item" to="/signup">Signup <AiOutlineUserAdd/></Link>
                     </li>
                  </ul>
                  </div>
