@@ -7,8 +7,10 @@ import { BsSearch } from 'react-icons/bs';
 import './Home.css'
 const Home = () => {
   return (
-    <div>
+   <>
+   
       <Navbar/>
+
       <div className='image'>
         <div className='search-bar'>
           <div><Select1/></div>
@@ -16,9 +18,9 @@ const Home = () => {
           <div><Select3/></div>
           <div className='search'><BsSearch/></div>
         </div>
-        
-      </div>
-    </div>
+        </div>
+
+      </>
   )
 }
 

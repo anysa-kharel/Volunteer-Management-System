@@ -1,6 +1,4 @@
-// import logo from './logo.svg';
 import './App.css';
-// import Navbar from './components/Navbar';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Contact from './pages/Contact';
@@ -14,6 +12,7 @@ function App() {
   
   <Routes>
     <Route index element={<Home/>}/>
+    <Route exact path="/home" element={<Home/>}/>
     <Route exact path="/login" element={<Login/>}/> 
     <Route exact path="/signup" element={<Signup/>}/> 
     <Route exact path="/contact" element={<Contact/>}/>

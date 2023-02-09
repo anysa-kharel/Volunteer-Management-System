@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 
-.title {
+.title a{
     color: white;
+    font-size: 30px;
     margin-left: 2rem;
+    font-family: 'Poppins', serif;
 }
 
 li {
@@ -37,6 +39,7 @@ li {
 .nav_item li a {
     
     color:white;
+    font-family: 'Poppins', serif;
 }
 
 .hover_item:hover{
@@ -52,9 +55,10 @@ li {
     margin-right: 2rem;
     color: white;
 }
-.log-in li{
+.log-in li a{
     margin: 0.8rem;
     color: white;
+    font-family: 'Poppins', serif;
 }
 .Menus {
     display: flex;

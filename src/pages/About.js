@@ -1,10 +1,10 @@
 import React from 'react'
-import CollapsibleExample from '../components/Nav'
+import Navbar from "../components/Navbar.js";
 
 const About = () => {
   return (
     <div>
-      <CollapsibleExample/>
+      <Navbar/>
       About Page
     </div>
   )

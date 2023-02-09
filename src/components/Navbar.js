@@ -10,7 +10,7 @@ const Navbar = () => {
             <div className="main-nav">
 
                 <div className="title">
-                    <h2>Volun</h2>
+                    <Link className="no_underline" to="/home">Volun</Link>
                 </div>
 
                 <div className="Menus">
