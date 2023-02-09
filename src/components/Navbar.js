@@ -20,9 +20,9 @@ const Navbar = () => {
                                 <div className="dropdown">
                                     <button className="dropbtn no_underline hover_item">Volunteering oppurtunities<i className=""></i></button>
                                     <div className="dropdown-content">
-                                        <a href="#">Link 1</a>
-                                        <a href="#">Link 2</a>
-                                        <a href="#">Link 3</a>
+                                        <a href="#">Paid</a>
+                                        <a href="#">Unpaid</a>
+                                        
                                     </div>
                                 </div>
                             </Link>

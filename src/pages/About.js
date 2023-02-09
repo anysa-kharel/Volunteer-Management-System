@@ -1,10 +1,10 @@
 import React from 'react'
-// import CollapsibleExample from '../components/Nav'
+import CollapsibleExample from '../components/Nav'
 
 const About = () => {
   return (
     <div>
-      {/* <CollapsibleExample/> */}
+      <CollapsibleExample/>
       About Page
     </div>
   )
