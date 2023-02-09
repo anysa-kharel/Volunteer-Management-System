@@ -1,0 +1,128 @@
+*
+{
+  margin: 0%;
+ 
+  
+}
+
+.container{
+    height:100vh;
+   
+    display: grid;
+  grid-template-columns: auto auto;
+}
+
+
+
+
+/* login  */
+.loginn{
+    background-color: white;
+    
+}
+
+.loginn .log{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-top: 100px;
+    
+    /* border:solid black; */
+    /* height: fit-content;
+    width: fit-content; */
+}
+
+.loginn.log h2{
+    font-size: 30px;
+    font-family: 'Poppins', serif;
+}
+
+.loginn .log h3{
+    font-size: 18px;
+    color: rgb(0, 0, 0,0.5);
+    font-family: 'Poppins', serif;
+}
+
+.loginn .log .google{
+    font-family: 'Poppins', serif;
+    border:solid rgba(0, 0, 0,0.7);
+    border-radius: 11px;
+    height:55px;
+    width: 459px;
+}
+.align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orr{
+    height:fit-content;
+    width:459px;
+}
+.or{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-between;
+    font-family: 'Poppins', serif;
+}
+
+.line{
+    width:196px;
+    height:1px;
+    background-color:rgba(0, 0, 0,0.3);
+}
+
+.email{
+    font-family: 'Poppins', serif;
+    border:solid rgba(0, 0, 0,0.7);
+    border-radius: 11px;
+    height:55px;
+    width: 459px;
+}
+
+.but{
+    background-color: #2089D5; /* Green */
+  border: none;
+  color: white;
+  border-radius: 11px;
+  /* padding: 60px 359px; */
+  height:55px;
+  width: 459px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.last{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    font-family: 'Poppins', serif;
+}
+
+
+
+
+
+
+/* image  */
+.imagee{
+   
+    background:url('../assests/volun.jpg');
+    background-size: cover;
+    background-position: center;
+    background-image: no-repeat;
+    height: 100vh;
+    width:720 px;;
+    margin-right: 0px;
+
+}
+.imagee .img{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
