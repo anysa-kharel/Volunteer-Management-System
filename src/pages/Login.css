@@ -157,13 +157,7 @@
 /* image  */
 .imagee img{
    
-    /* background:url('../assests/volun.jpg');
-    background-size: cover;
-    background-position: center;
-    background-image: no-repeat;
-    height: 100vh;
-    width:720 px;;
-    margin-right: 0px; */
+    
     height:100vh
 
 }
@@ -173,3 +167,6 @@
     justify-content: flex-end;
 }
 
+.blue-text{
+    color:#2089D5;
+}

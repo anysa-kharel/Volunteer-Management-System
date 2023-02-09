@@ -51,7 +51,7 @@ const Login = () => {
            </div>
 
            <div className="orr last" style={{fontSize:'14px'}}>
-          Don't have an account? <Link to="/signup" className='no_underline'>&nbsp;Sign up for free.</Link>
+          Don't have an account? <Link to="/user-signup" className='no_underline blue-text'>&nbsp;Sign up</Link>
            </div>
 
         </div>

@@ -1,23 +1,19 @@
 /* login  */
 .signup{
     background-color: white;
-    padding-right: 10%;
+    padding-right: 15%;
     
 }
 
 .signup .log{
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    margin-top: 100px;
+  
+    margin-top: 14px;
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height:75vh;
+    height:95vh;
     
-    /* border:solid black; */
-    /* height: fit-content;
-    width: fit-content; */
+
 }
 
 .signup.log h2{
@@ -40,4 +36,60 @@
     height:55px;
     width: 459px;
     box-shadow: 5px 5px 5ox 5px #2089D5;
+}
+
+
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+.namefill{
+    font-family: 'Poppins', serif;
+    border:1px solid rgba(159, 156, 156, 0.7);
+    border-radius: 11px;
+    height:45px;
+    width: 210px;
+}
+
+.namefill::input{
+    padding:0 10px;
+
+}
+.namefill::placeholder{
+    padding:0 10px;
+
+}
+
+.field{
+    font-family: 'Poppins', serif;
+}
+
+.fie{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.emaill{
+    font-family: 'Poppins', serif;
+    border:1px solid rgba(159, 156, 156, 0.7);
+    border-radius: 11px;
+    height:45px;
+    width: 459px;
+}
+.emaill::input{
+    padding:0 10px;
+
+}
+.emaill::placeholder{
+    padding:0 10px;
+
+}
+
+.in{
+    height:255px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    
+    justify-content:space-between;
 }
