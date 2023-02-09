@@ -1,13 +1,22 @@
-.image{
-    
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)),url('../assests/bg1.jpg');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    /* --primary-color:#2089D5; */
+    --primary-color:#98d6ff;
+}
+.image {
+
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('../assests/bg1.jpg');
     background-size: cover;
     background-position: center;
     background-image: no-repeat;
     width: 100%;
     height: 705px;
-    position: fixed;
-  
+    /* position: fixed; */
+
 }
 
 .search-bar {
@@ -15,19 +24,66 @@
     justify-content: center;
     align-items: center;
     margin-top: 20%;
- 
-   
-}
-.search-bar div{
-    margin: 1rem;
-}
-.search{
-    display: flex;
-    color: black;
-    background-color: antiquewhite;
-    justify-content: center;
-    align-items: center;
-    width:2.5rem;
-    height:2.5rem;
+
+
 }
 
+.search-bar div {
+    margin: 1rem;
+}
+
+.search {
+    display: flex;
+    color: black;
+    background-color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+/* Card section */
+
+.card {
+   
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+ 
+  
+  
+}
+.card-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 0.1px solid black; */
+    gap:5px;
+    padding: 20px;
+    width:300px;
+    background-color: var(--primary-color);
+    color:black;
+    
+}
+
+.card1{
+   gap:0.5px;
+   
+}
+.card2{
+    gap:4.3px;
+ }
+ .card3{
+    gap:4.3px;
+ }
+
+ .card-item h1{
+ font-size: 30px;
+ }
+
+ .card-item h3{
+    font-size: 15px;
+ }

@@ -43,7 +43,7 @@ li {
 }
 
 .hover_item:hover{
-    color: black;
+    color: #98d6ff;
 }
 
 .no_underline {
@@ -89,7 +89,7 @@ li {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color:black;
+    background-color:#98d6ff;
     min-width: 180px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 5;
@@ -115,6 +115,6 @@ li {
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  /* .dropbtn:hover{
- color:black;
-  } */
+  .dropbtn:hover{
+ color:#98d6ff;
+  }
