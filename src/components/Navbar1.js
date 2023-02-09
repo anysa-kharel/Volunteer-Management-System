@@ -43,7 +43,7 @@ const Navbar = () => {
                         <Link className="no_underline hover_item" to="/login">Login <BiUser /></Link>
                     </li>
                     <li>
-                        <Link className="no_underline hover_item" to="/signup">Signup <AiOutlineUserAdd /></Link>
+                        <Link className="no_underline hover_item" to="/user-signup">Signup <AiOutlineUserAdd /></Link>
                     </li>
                 </ul>
             </div>
