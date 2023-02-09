@@ -1,0 +1,43 @@
+/* login  */
+.signup{
+    background-color: white;
+    padding-right: 10%;
+    
+}
+
+.signup .log{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-top: 100px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height:75vh;
+    
+    /* border:solid black; */
+    /* height: fit-content;
+    width: fit-content; */
+}
+
+.signup.log h2{
+    font-size: 30px;
+    
+    font-family: 'Poppins', serif;
+}
+
+.signup .log h3{
+    font-size: 14px;
+    font-weight:500;
+    color: rgb(0, 0, 0,0.5);
+    font-family: 'Poppins', serif;
+}
+
+.signup .log .google{
+    font-family: 'Poppins', serif;
+    border:1px solid rgba(159, 156, 156, 0.7);
+    border-radius: 11px;
+    height:55px;
+    width: 459px;
+    box-shadow: 5px 5px 5ox 5px #2089D5;
+}

@@ -1,6 +1,6 @@
 .image{
     
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)),url('../assests/sanduk.jpg');
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)),url('../assests/bg1.jpg');
     background-size: cover;
     background-position: center;
     background-image: no-repeat;

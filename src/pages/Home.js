@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+import Navbar2 from '../components/Navbar2'
 import Select1 from '../components/Select1'
 import Select2 from '../components/Select2'
 import Select3 from '../components/Select3'
@@ -9,9 +9,10 @@ const Home = () => {
   return (
    <>
    
-      <Navbar/>
+      
 
       <div className='image'>
+      <Navbar2/>
         <div className='search-bar'>
           <div><Select1/></div>
           <div><Select2/></div>

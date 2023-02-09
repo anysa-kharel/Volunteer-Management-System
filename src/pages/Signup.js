@@ -2,60 +2,60 @@ import React from 'react'
 import './Signup.css';
 import { Link } from 'react-router-dom';
 import {FcGoogle} from 'react-icons/fc';
+import loginimage from '../assests/volun.jpg'
 
 const Signup = () => {
   return (
    <>
-     <div className="container"> 
+     <div className="containerr"> 
 
       {/* image  */}
-     <div className="imagee">
-        <div className='img'></div>
+      <div className="imagee">
+        <div className='img'><img src={loginimage}></img></div>
       </div>
+
+     
 
 {/* Create account  */}
 
-       <div className='loginn'>
+       <div className='signup'>
         <div className="log">
 
           <h2>Create an account!</h2>
           <h3>Please enter your details.</h3>
 
           <div className="google align ">
-            <FcGoogle/> Sign up with Google.
+            <FcGoogle/>&nbsp;&nbsp; Log in with Google.
           </div>
           
           <div className='orr'>
-            <ul className="or ">
-              <li className="line"/>
-              <li>or</li>
-              <li className="line"/>
-            </ul>
+            <div className='line'></div>
+            <div className='or'>or</div>
+            <div className='line'></div>
           </div>
 
           <div>
-            <input type="email" className="email my-2" value="Email"/>
+            <input type="email" className="email my-2" value="" placeholder='Email'/>
             </div>
             <div>
-            <input type="password" className="email my-2" value="Password"/>
-            </div>           
+            <input type="password" className="email my-2" value="" placeholder='Password'/>
+            </div>         
 
 
 
            
-           <div >
-            <ul className="orr or">
-              <li> <input type="checkbox"></input> Remember Me </li>
-              <li> Forgot Password?</li>
-              </ul>
-           </div>
+            <div className='orr_or'>
+              <div className='checkbox'><input type ="checkbox"/><h3 className='my-1 mmm' style={{fontSize:'14px'}}>&nbsp;&nbsp;Remember Me</h3></div>
+              <h3 className='my-1'>Forgot Password?</h3>
+
+            </div>
 
            <div >
            <input type="submit" value="Create account" className="but my-4"/>
            </div>
 
            <div className="orr last">
-          Already have an account? <Link to="/login"> Login Here.</Link>
+          Already have an account? <Link className="no_underline"to="/login"> &nbsp; Login Here.</Link>
            </div>
 
         </div>

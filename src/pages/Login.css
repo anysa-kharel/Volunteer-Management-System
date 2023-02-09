@@ -1,15 +1,17 @@
 *
 {
-  margin: 0%;
+  margin: 0;
+  padding:0;
  
   
 }
 
-.container{
-    height:100vh;
-   
-    display: grid;
-  grid-template-columns: auto auto;
+.containerr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    margin:0;
 }
 
 
@@ -18,6 +20,7 @@
 /* login  */
 .loginn{
     background-color: white;
+    padding-left: 10%;
     
 }
 
@@ -26,6 +29,10 @@
     /* align-items: center; */
     /* justify-content: center; */
     margin-top: 100px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height:75vh;
     
     /* border:solid black; */
     /* height: fit-content;
@@ -34,21 +41,24 @@
 
 .loginn.log h2{
     font-size: 30px;
+    
     font-family: 'Poppins', serif;
 }
 
 .loginn .log h3{
-    font-size: 18px;
+    font-size: 14px;
+    font-weight:500;
     color: rgb(0, 0, 0,0.5);
     font-family: 'Poppins', serif;
 }
 
 .loginn .log .google{
     font-family: 'Poppins', serif;
-    border:solid rgba(0, 0, 0,0.7);
+    border:1px solid rgba(159, 156, 156, 0.7);
     border-radius: 11px;
     height:55px;
     width: 459px;
+    box-shadow: 5px 5px 5ox 5px #2089D5;
 }
 .align{
     display: flex;
@@ -57,29 +67,64 @@
 }
 
 .orr{
-    height:fit-content;
-    width:459px;
-}
-.or{
     display: flex;
     flex-direction: row;
-    align-items:center;
-    justify-content:space-between;
-    font-family: 'Poppins', serif;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    
 }
 
-.line{
-    width:196px;
-    height:1px;
-    background-color:rgba(0, 0, 0,0.3);
+.orr .or{
+    padding:0 15px;
 }
+
+.orr .line{
+    border-top:1px solid rgb(217, 215, 215);
+    width:100%;
+    
+
+}
+
+
+.orr_or{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.orr_or .checkbox{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.checkbox input[type='checkbox']{
+    border:1px solid black;
+}
+
+
+
+
 
 .email{
     font-family: 'Poppins', serif;
-    border:solid rgba(0, 0, 0,0.7);
+    border:1px solid rgba(159, 156, 156, 0.7);
     border-radius: 11px;
     height:55px;
     width: 459px;
+}
+
+.email::input{
+    padding:0 10px;
+
+}
+.email::placeholder{
+    padding:0 10px;
+
 }
 
 .but{
@@ -110,15 +155,16 @@
 
 
 /* image  */
-.imagee{
+.imagee img{
    
-    background:url('../assests/volun.jpg');
+    /* background:url('../assests/volun.jpg');
     background-size: cover;
     background-position: center;
     background-image: no-repeat;
     height: 100vh;
     width:720 px;;
-    margin-right: 0px;
+    margin-right: 0px; */
+    height:100vh
 
 }
 .imagee .img{
@@ -126,3 +172,4 @@
     align-items: flex-end;
     justify-content: flex-end;
 }
+
