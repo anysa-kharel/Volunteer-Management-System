@@ -5,7 +5,8 @@ import Select1 from '../components/Select1'
 import Select2 from '../components/Select2'
 import Select3 from '../components/Select3'
 import './Enter.css'
-
+import {Volundata} from "../components/volundata";
+import Showresult from './showresultpage';
 const Enter = () => {
   return (
     <>
@@ -23,6 +24,8 @@ const Enter = () => {
     <h2>Recommended for you</h2>
     <h3>Based on your profile and search history.</h3>
     
+    <Showresult />
+    {/* <Show */}
     </div>
     </>
    

@@ -6,6 +6,7 @@ import About from './pages/About';
 import Home from './pages/Home';
 import Enter from './pages/Enter';
 import {Routes,Route } from 'react-router-dom';
+import SearchResults from './pages/SearchResults';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
     <Route exact path="/user-signup" element={<Signup/>}/> 
     <Route exact path="/contact" element={<Contact/>}/>
     <Route exact path="/about" element={<About/>}/>  
+    <Route path="/search" element={<SearchResults/>}/>
   </Routes>
   
 

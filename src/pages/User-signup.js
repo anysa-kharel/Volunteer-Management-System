@@ -79,7 +79,8 @@ const Signup = () => {
 
 
            <div >
-           <input type="submit" value="Create account" className="but my-4"/>
+            <Link to="/login">
+           <input type="submit" value="Create account" className="but my-4"/></Link>
            </div><br/>
 
 
