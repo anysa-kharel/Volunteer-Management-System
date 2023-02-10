@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+form{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    padding: 10px;
+   
+}
+form select{
+    height: 35px;
+    width:250px;
+    background-color: var(--primary-color);
+    border: none;
+    font-family: 'Poppins', serif;
+}
+form button{
+    width:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    border: none;
+}
