@@ -1,4 +1,10 @@
 /* login  */
+.containerr{
+    display: flex;
+    justify-content: space-between;
+    gap:8%;
+    /* flex-direction: column; */
+}
 .signup{
     background-color: white;
     padding-right: 15%;
@@ -18,7 +24,6 @@
 
 .signup.log h2{
     font-size: 30px;
-    
     font-family: 'Poppins', serif;
 }
 
@@ -34,7 +39,7 @@
     border:1px solid rgba(159, 156, 156, 0.7);
     border-radius: 11px;
     height:55px;
-    width: 459px;
+    width: 100%;
     box-shadow: 5px 5px 5ox 5px #2089D5;
 }
 
@@ -51,7 +56,7 @@
     width: 210px;
 }
 
-.namefill::input{
+.namefill:input{
     padding:0 10px;
 
 }
@@ -62,9 +67,15 @@
 
 .field{
     font-family: 'Poppins', serif;
+    font-size: 15px;
+}
+.field-input{
+    font-family: 'Poppins', serif;
+    font-size: 13px;
 }
 
 .fie{
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
