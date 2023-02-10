@@ -1,0 +1,23 @@
+
+
+
+.icon{
+    margin-right: 2rem;
+    width: 250px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    color: white;
+   
+}
+
+.acc{
+    font-size:16px;
+    font-family: 'Poppins', serif;
+}
+.noti{
+    display: flex;
+    align-items: center;
+    font-size:25px;
+}

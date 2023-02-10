@@ -29,7 +29,7 @@ const Login = () => {
             <input type="email" className="email my-2" value="" placeholder='Email'/>
             </div>
             <div>
-            <input type="password" className="email my-2" value="" placeholder='password'/>
+            <input type="password" className="email my-2" value="" placeholder='Password'/>
             </div>           
 
 
@@ -47,7 +47,8 @@ const Login = () => {
        
 
            <div >
-           <input type="submit" value="Log In" className="but my-4"/>
+           <Link to="/enter">
+           <input type="submit" value="Log In" className="but my-4"></input></Link>
            </div>
 
            <div className="orr last" style={{fontSize:'14px'}}>
