@@ -7,7 +7,10 @@ const Volundata = [
         "location":"Pokhara",
         "stipend":"Free",
         "type":"Unpaid",
-        "duration":"5 Hrs"
+        "duration":"5 Hrs",
+        image:"location",
+        field:"Environment",
+        picture:"../assests/sanduk.jpg"
 
     },
     {
@@ -17,8 +20,9 @@ const Volundata = [
         "datentime":"2079/11/5 11:00 A.M",
         "location":"Kathmandu",
         "stipend":"Free",
-        "type":"Paid",
-        "duration":"7 Hrs"
+        "type":"Unpaid",
+        "duration":"7 Hrs",
+        field:"Education"
     },
 
     {
@@ -29,7 +33,8 @@ const Volundata = [
         location:"Butwal",
         stipend:"1000",
         type:"Paid",
-        duration:"3 Hrs"
+        duration:"3 Hrs",
+        field:"Others"
     },
 
     {
@@ -40,7 +45,8 @@ const Volundata = [
         location:"Kathmandu",
         stipend:"Free",
         type:"Unpaid",
-        duration:"5 Hrs"
+        duration:"5 Hrs",
+        field:"Public Health"
     },
 
     {
@@ -51,7 +57,8 @@ const Volundata = [
         location:"Kathmandu",
         stipend:"Free",
         type:"Unpaid",
-        duration:"5 Hrs"
+        duration:"5 Hrs",
+        field:"Environment"
     },
 
     {
@@ -59,10 +66,11 @@ const Volundata = [
         "program":"Intro to Share Market",
         organization:"Trade Nepal",
         datentime:"2079/11/8 11:00 A.M",
-        location:"Jhapa",
+        location:"Baglung",
         stipend:"500",
         type:"Paid",
-        duration:"2 Hrs"
+        duration:"2 Hrs",
+        field:"Business"
     },
     
     {
@@ -70,10 +78,11 @@ const Volundata = [
         "program":"Free Health Camp",
         organization:"UNICEF",
         datentime:"2079/11/8 11:00 A.M",
-        location:"Gulmi",
+        location:"Butwal",
         stipend:"500",
         type:"Paid",
-        duration:"3 Hrs"
+        duration:"3 Hrs",
+        field:"Public Health"
     },
 
     {
@@ -84,7 +93,8 @@ const Volundata = [
         location:"Baglung",
         stipend:"Free",
         type:"Unpaid",
-        duration:"Flexible"
+        duration:"Flexible",
+        field:"Public Health"
     },
 
     {
@@ -92,10 +102,11 @@ const Volundata = [
         "program":"UI/UX Workshop",
         organization:"Design Community",
         datentime:"2079/11/8 11:00 A.M",
-        location:"Chitwan",
+        location:"Pokhara",
         stipend:"500",
         type:"Paid",
-        duration:"2 Hrs"
+        duration:"2 Hrs",
+        field:"Engineering"
     },
 
     {
@@ -103,10 +114,22 @@ const Volundata = [
         "program":"Intro to React Workshop",
         organization:"Techpana",
         datentime:"2079/11/8 11:00 A.M",
-        location:"Britamod",
+        location:"Pokhara",
         stipend:"500",
         type:"Paid",
-        duration:"2 Hrs"
+        duration:"2 Hrs",
+        field:"Engineering"
+    },
+    {
+        "id":"11", 
+        "program":"Tree Plantation",
+        organization:"Go Green Nepal",
+        datentime:"2079/11/8 11:00 A.M",
+        location:"Pokhara",
+        stipend:"Free",
+        type:"Unaid",
+        duration:"3 Hrs",
+        field:"Environment"
     }
 ]
 

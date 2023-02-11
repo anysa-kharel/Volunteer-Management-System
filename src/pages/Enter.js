@@ -1,35 +1,139 @@
-import React from 'react'
-import Navbar3 from '../components/Navbar3'
-import { BsSearch } from 'react-icons/bs';
-import Select1 from '../components/Select1'
-import Select2 from '../components/Select2'
-import Select3 from '../components/Select3'
-import './Enter.css'
-import {Volundata} from "../components/volundata";
-import Showresult from './showresultpage';
+import React from "react";
+import Navbar3 from "../components/Navbar3";
+import { useState } from "react";
+import "./Enter.css";
+import Volundata from "../components/volundata";
+import "../components/Form.css";
+import { BiSearch } from "react-icons/bi";
+import { FaRegBookmark } from "react-icons/fa";
+
 const Enter = () => {
+  const [location, setLocation] = useState("");
+  const [field, setField] = useState("");
+  const [type, setType] = useState("");
+  const [searchData, setSearchData] = useState([]);
+  const [click, setClick] = useState(false);
+
+  const handleClick = (e) => {
+    setClick(true);
+    e.preventDefault();
+    console.log(location, field, type);
+
+    const locationData = Volundata.filter((data) => {
+      if (!location && !field && !type) {
+        return Volundata;
+      }
+
+      if (!location) {
+        return data.type === type && data.field === field;
+      }
+
+      if (!type) {
+        return data.location === location && data.field === field;
+      }
+
+      if (!field) {
+        return data.type === type && data.location === location;
+      }
+
+      if (!location && !type) {
+        return data.field === field;
+      }
+
+      if (!field && !type) {
+        return data.location === location;
+      }
+
+      if (!location && !field) {
+        return data.type === type;
+      } else {
+        return (
+          data.field === field &&
+          data.type === type &&
+          data.location === location
+        );
+      }
+    });
+
+    setSearchData(locationData);
+  };
+
   return (
     <>
-    <Navbar3/>
+      <Navbar3 />;{/* Search Bar */}
+      <div className="enter">
+        <form className="search-barr">
+          <select
+            value={location}
+            onChange={(e) => setLocation(e.currentTarget.value)}
+          >
+            <option value="">Sector, Interested field</option>
+            <option value="Environment">Environment</option>
+            <option value="Business">Business</option>
+            <option value="Public health">Public health</option>
+            <option value="Engineering">Engineering</option>
+          </select>
 
-    <div className="enter">
-    <div className='search-barr'>
-          <div><Select1 /></div>
-          <div><Select2 /></div>
-          <div><Select3 /></div>
-          <div className='search'><BsSearch /></div>
-        </div>
-      
+          <select
+            value={field}
+            onChange={(e) => setField(e.currentTarget.value)}
+          >
+            <option value="">City, State , Zip</option>
+            <option value="Kathmandu">Kathmandu</option>
+            <option value="Pokhara">Pokhara</option>
+            <option value="Baglung">Baglung</option>
+            <option value="Butwal">Butwal</option>
+          </select>
 
-    <h2>Recommended for you</h2>
-    <h3>Based on your profile and search history.</h3>
+          <select value={type} onChange={(e) => setType(e.currentTarget.value)}>
+            <option value="">Select Type</option>
+            <option value="Paid">Paid</option>
+            <option value="Unpaid">Unpaid</option>
+          </select>
+
+          <button onClick={handleClick}>
+            <BiSearch size={20} />
+          </button>
+        </form>
+
+        <h2>Recommended for you</h2>
+        <h3>Based on your profile and search history.</h3>
+      </div>
+      {/* Containers */}
+
+
+      <div className="pro-container">
+      {
+      searchData.slice(0, 6).map(data => {
+        return(<>
+    <div className="info">
+
     
-    <Showresult />
-    {/* <Show */}
-    </div>
-    </>
+      <div key={data.id} className="pro-logo">
+         <img src={data.picture} alt="pic"/>
+      </div>
+ 
+      <div className="pro-details">
+        <div key={data.id} className="book"> <h2>Program:&nbsp;{data.program}</h2><div className="bookmark"><FaRegBookmark/></div></div>
+        <div key={data.id}> <h3>Organization:&nbsp;{data.organization}</h3></div>
+        <div key={data.id}> <h3>Date & Time:&nbsp;{data.datantime}</h3></div>
+        <div key={data.id}> <h3>Location:&nbsp;{data.location}</h3></div>
+        <div key={data.id}> <h3>Duration:&nbsp;{data.duration}</h3></div>
+        <div key={data.id}> <h3>Type:&nbsp;{data.type}</h3></div>
+        <div key={data.id} className="book"> <h3>Stipend:&nbsp;{data.stipend}</h3><div >
+           
+           <input type="button" value="Want to Join?" className="but"></input>
+           </div></div>
+      </div>
+     </div>
+      
+      </>  )}
+        ) 
+        } 
    
-  )
-}
+      </div>
+    </>
+  );
+};
 
-export default Enter
+export default Enter;

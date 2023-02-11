@@ -11,14 +11,38 @@
     flex-direction: row;
     justify-content:space-between;
     align-items: center ;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
+    /* border:1px solid black; */
+    width:800px;
 
 
 }
 
-.search-barr div {
+.enter form{
+    display: flex;
+    justify-content: center;
+    
+    padding: 10px;
+   
+}
+.enter form select{
+    height: 35px;
+    width:250px;
+    background-color: var(--primary-color);
+    border: none;
+    font-family: 'Poppins', serif;
     margin: 0.1rem;
 }
+.enter form button{
+    width:40px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    border: none;
+}
+
 
 .enter .h2{
     font-size: 30px;
@@ -31,4 +55,58 @@
     font-weight:500;
     color: rgb(0, 0, 0,0.5);
     font-family: 'Poppins', serif;
+}
+
+.pro-container{
+    margin-top: 3%;
+    background-color:#208ad548;
+    display: flex;
+    flex-direction: column;
+    margin: 0.3rem;
+}
+
+/* .info{
+    display: flex;
+    flex-direction: row;
+    
+} */
+
+.pro-details{
+    margin-left: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+.pro-details div{
+    margin: 0.3rem;
+}
+
+.pro-logo{
+    margin:4% ;
+    border: 1px solid black;
+    width:500px;
+    height:200px;
+}
+
+.book{
+    display: flex;
+}
+
+.book .bookmark{
+    margin-right: 0.2rem;
+    font-size: 30px;
+    
+    
+}
+
+.pro-details .but{
+    background-color: #2089D5; /* Green */
+  color: white;
+  border-radius: 11px;
+  height:55px;
+  width: 200px;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 28rem;
+  
 }
