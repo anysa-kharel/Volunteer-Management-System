@@ -60,7 +60,9 @@ const Enter = () => {
 
   return (
     <>
-      <Navbar3 />;{/* Search Bar */}
+      <Navbar3 />
+      
+      {/* Search Bar */}
       <div className="enter">
         <form className="search-barr">
           <select
