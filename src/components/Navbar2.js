@@ -22,32 +22,43 @@ const Navbar2 = () => {
                                     <div className="dropdown-content">
                                         <a href="#">Paid</a>
                                         <a href="#">Unpaid</a>
-                                        
+
                                     </div>
                                 </div>
                             </Link>
-                    </li>
+                        </li>
 
-                    <li>
-                        <Link className="no_underline hover_item" to="/about"> About Us</Link>
-                    </li>
-                    <li>
-                        <Link className="no_underline hover_item" to="/contact"> Contact Us </Link>
-                    </li>
-                </ul>
-            </div>
+                        <li>
+                            <Link className="no_underline hover_item" to="/about"> About Us</Link>
+                        </li>
+                        <li>
+                            <Link className="no_underline hover_item" to="/contact"> Contact Us </Link>
+                        </li>
+                    </ul>
+                </div>
 
-            <div className="login">
-                <ul className="log-in">
-                    <li>
-                        <Link className="no_underline hover_item" to="/login">Login <BiUser /></Link>
-                    </li>
-                    <li>
-                        <Link className="no_underline hover_item" to="/user-signup">Signup <AiOutlineUserAdd /></Link>
-                    </li>
-                </ul>
+                <div className="login1">
+                    <ul className="log-in">
+                        <li>
+                            <Link className="no_underline hover_item" to="/login">Login <BiUser size={15} /></Link>
+                        </li>
+                        <li>
+                            <Link>
+                                <div className="dropdown">
+                                    <button className="dropbtn  no_underline hover_item">
+                                        Signup <AiOutlineUserAdd size={15}/><i className=""></i>
+                                    </button>
+                                    <div className="dropdown-content signup1">
+                                        <Link to="/user-signup">Sign-up as user</Link>
+                                        <Link to="/org-signup">Sign-up as organization</Link>
+                                        <Link to="/login">Sign-up as others</Link>
+                                    </div>
+                                </div>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
         </>
     )
 }

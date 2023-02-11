@@ -45,7 +45,7 @@ a{
     color: black;
     cursor: pointer ;
 }
-a:hover{
+footer a:hover{
     color: white;
 }
 .lastline{

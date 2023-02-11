@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.title a{
+.title a {
     color: white;
     font-size: 30px;
     margin-left: 2rem;
@@ -27,22 +27,22 @@ li {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-    
+
 
 }
 
 .nav_item li {
     margin: 1rem;
-    
+
 }
 
 .nav_item li a {
-    
-    color:white;
+
+    color: white;
     font-family: 'Poppins', serif;
 }
 
-.hover_item:hover{
+.hover_item:hover {
     color: #98d6ff;
 }
 
@@ -52,14 +52,16 @@ li {
 
 .log-in {
     display: flex;
-    margin-right: 2rem;
+    margin-right: 2.5rem;
     color: white;
 }
-.log-in li a{
+
+.log-in li a {
     margin: 0.8rem;
     color: white;
     font-family: 'Poppins', serif;
 }
+
 .Menus {
     display: flex;
     flex-direction: row;
@@ -104,6 +106,12 @@ li {
     display: block;
     text-align: left;
   }
+  .signup1{
+    width: 200px;
+    margin: 0px -80px;
+    padding: 0px 0px;
+    line-height: 15px;
+     }
   
   /* Add a grey background color to dropdown links on hover */
   .dropdown-content a:hover {

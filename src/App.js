@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Enter from './pages/Enter';
 import {Routes,Route } from 'react-router-dom';
 import SearchResults from './pages/SearchResults';
+import Signup1 from './pages/Orgsignup';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
     <Route exact path="/login" element={<Login/>}/> 
     <Route exact path="/enter" element={<Enter/>}/>
     <Route exact path="/user-signup" element={<Signup/>}/> 
+    <Route exact path="/org-signup" element={<Signup1/>}/> 
     <Route exact path="/contact" element={<Contact/>}/>
     <Route exact path="/about" element={<About/>}/>  
     <Route path="/search" element={<SearchResults/>}/>

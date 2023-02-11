@@ -1,11 +1,7 @@
 import React from 'react'
 import Navbar2 from '../components/Navbar2'
-// import Select1 from '../components/Select1'
-// import Select2 from '../components/Select2'
-// import Select3 from '../components/Select3'
 import Form from '../components/Form';
 import Footer from '../components/Footer'
-import { BsSearch } from 'react-icons/bs';
 import { AiOutlinePlus } from 'react-icons/ai';
 import { ImUserCheck } from 'react-icons/im';
 import { GrOrganization } from 'react-icons/gr';

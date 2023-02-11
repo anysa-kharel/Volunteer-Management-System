@@ -47,9 +47,11 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="login">
+        <div className="login1">
           <ul className="log-in">
             <li>
+            
+              
               <Link className="no_underline hover_item" to="/login">
                 Login <BiUser />
               </Link>
