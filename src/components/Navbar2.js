@@ -42,10 +42,11 @@ const Navbar2 = () => {
                         <li>
                             <Link className="no_underline hover_item" to="/login">Login <BiUser size={15} /></Link>
                         </li>
+                       
                         <li>
-                            <Link>
+                            {/* <Link> */}
                                 <div className="dropdown">
-                                    <button className="dropbtn  no_underline hover_item">
+                                    <button className="dropbtn no_underline hover_item">
                                         Signup <AiOutlineUserAdd size={15}/><i className=""></i>
                                     </button>
                                     <div className="dropdown-content signup1">
@@ -54,7 +55,7 @@ const Navbar2 = () => {
                                         <Link to="/login">Sign-up as others</Link>
                                     </div>
                                 </div>
-                            </Link>
+                            {/* </Link> */}
                         </li>
                     </ul>
                 </div>

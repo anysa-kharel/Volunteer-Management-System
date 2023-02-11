@@ -12,51 +12,52 @@ const Enter = () => {
   const [field, setField] = useState("");
   const [type, setType] = useState("");
   const [searchData, setSearchData] = useState([]);
-  const [click, setClick] = useState(false);
+  // const [click, setClick] = useState(false);
 
   const handleClick = (e) => {
-    setClick(true);
-    e.preventDefault();
+    e.preventDefault()
     console.log(location, field, type);
 
-    const locationData = Volundata.filter((data) => {
-      if (!location && !field && !type) {
-        return Volundata;
-      }
 
-      if (!location) {
-        return data.type === type && data.field === field;
-      }
+    const locationData = Volundata.filter(data => {
 
-      if (!type) {
-        return data.location === location && data.field === field;
-      }
+        if(!location && !field && !type){
+            return(Volundata)
+        }
 
-      if (!field) {
-        return data.type === type && data.location === location;
-      }
+        if(!location){
+            return(data.type===type && data.field===field)
+        }
 
-      if (!location && !type) {
-        return data.field === field;
-      }
+        if(!type){
+            return(data.location===location && data.field===field)
+        }
 
-      if (!field && !type) {
-        return data.location === location;
-      }
+        if(!field){
+            return(data.type===type && data.location===location)
+        }
 
-      if (!location && !field) {
-        return data.type === type;
-      } else {
-        return (
-          data.field === field &&
-          data.type === type &&
-          data.location === location
-        );
-      }
-    });
+        if(!location && !type){
+            return(data.field===field)
+        }
 
-    setSearchData(locationData);
-  };
+        if(!field && !type){
+            return(data.location===location)
+        }
+
+        if(!location && !field){
+            return(data.type===type)
+        }
+
+        else{
+            return(data.field===field && data.type===type && data.location===location)
+        }
+
+    })
+    console.log(locationData)
+    setSearchData(locationData)
+
+}
 
   return (
     <>

@@ -37,7 +37,7 @@ const SearchResults = () => {
             }
 
             if(!field && !type){
-                return(data.location ===location)
+                return(data.location===location)
             }
 
             if(!location && !field){
@@ -49,7 +49,7 @@ const SearchResults = () => {
             }
 
         })
-        
+        console.log(locationData)
         setSearchData(locationData)
 
     }
@@ -81,7 +81,7 @@ const SearchResults = () => {
         </select>
         <button onClick={handleClick}>Search</button>
       </form>
-      {/* <div>
+      <div>
         {
             searchData.slice(0, 6).map(data => {
                 return(
@@ -100,10 +100,10 @@ const SearchResults = () => {
                 )
             })
         }
-      </div> */}
+      </div>
 
 
-        <div className="pro-container">
+        {/* <div className="pro-container">
       {
       searchData.slice(0, 6).map(data => {
         return(
@@ -128,7 +128,7 @@ const SearchResults = () => {
         )}
         )
         } 
-    </div>
+    </div> */}
 
 
     </>
