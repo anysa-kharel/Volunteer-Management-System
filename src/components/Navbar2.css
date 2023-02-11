@@ -57,7 +57,19 @@ li {
 }
 
 .log-in li a {
-    margin: 0.8rem;
+    margin: 1rem;
+    color: white;
+    font-family: 'Poppins', serif;
+}
+
+.log-in2 {
+    display: flex;
+    margin-right: 2.5rem;
+    color: white;
+}
+
+.log-in2 li a {
+    margin: 2rem;
     color: white;
     font-family: 'Poppins', serif;
 }

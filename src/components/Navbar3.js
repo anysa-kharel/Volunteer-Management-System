@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { AiOutlineUserAdd } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
+import logo from "../assests/logo2.png"
 import "./Navbar.css";
 import "./Navbar3.css";
 
@@ -12,7 +13,7 @@ const Navbar3 = () => {
       <div className="main-nav">
         <div className="title">
           <Link className="no_underline" to="/home">
-            Volun
+            <img src= {logo} className="logo"/>
           </Link>
         </div>
 

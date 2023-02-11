@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { BiUser } from 'react-icons/bi';
 import { AiOutlineUserAdd } from 'react-icons/ai';
 import './Navbar2.css'
+import logo from "../assests/logo2.png"
 
 const Navbar2 = () => {
     return (
@@ -10,7 +11,7 @@ const Navbar2 = () => {
             <div className="main-nav2">
 
                 <div className="title">
-                    <Link className="no_underline" to="/home">Volun</Link>
+                    <Link className="no_underline" to="/home"><img src= {logo} className="logo"/></Link>
                 </div>
 
                 <div className="Menus">
@@ -38,7 +39,7 @@ const Navbar2 = () => {
                 </div>
 
                 <div className="login1">
-                    <ul className="log-in">
+                    <ul className="log-in2">
                         <li>
                             <Link className="no_underline hover_item" to="/login">Login <BiUser size={15} /></Link>
                         </li>

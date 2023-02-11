@@ -46,7 +46,7 @@ const Volundata = [
         stipend:"Free",
         type:"Unpaid",
         duration:"5 Hrs",
-        field:"Public Health"
+        field:"Public health"
     },
 
     {
@@ -82,7 +82,7 @@ const Volundata = [
         stipend:"500",
         type:"Paid",
         duration:"3 Hrs",
-        field:"Public Health"
+        field:"Public health"
     },
 
     {
@@ -94,7 +94,7 @@ const Volundata = [
         stipend:"Free",
         type:"Unpaid",
         duration:"Flexible",
-        field:"Public Health"
+        field:"Public health"
     },
 
     {
@@ -106,7 +106,7 @@ const Volundata = [
         stipend:"500",
         type:"Paid",
         duration:"2 Hrs",
-        field:"Engineering"
+        field:"Technology"
     },
 
     {
@@ -118,7 +118,7 @@ const Volundata = [
         stipend:"500",
         type:"Paid",
         duration:"2 Hrs",
-        field:"Engineering"
+        field:"Technology"
     },
     {
         "id":"11", 

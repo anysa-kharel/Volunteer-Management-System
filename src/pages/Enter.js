@@ -12,74 +12,62 @@ const Enter = () => {
   const [field, setField] = useState("");
   const [type, setType] = useState("");
   const [searchData, setSearchData] = useState([]);
-  // const [click, setClick] = useState(false);
+  const [click, setClick] = useState(false);
 
   const handleClick = (e) => {
-    e.preventDefault()
+    setClick(true);
+    e.preventDefault();
     console.log(location, field, type);
+    console.log(!location, !type);
 
-
-    const locationData = Volundata.filter(data => {
-
-        if(!location && !field && !type){
-            return(Volundata)
-        }
-
-        if(!location){
-            return(data.type===type && data.field===field)
-        }
-
-        if(!type){
-            return(data.location===location && data.field===field)
-        }
-
-        if(!field){
-            return(data.type===type && data.location===location)
-        }
-
-        if(!location && !type){
-            return(data.field===field)
-        }
-
-        if(!field && !type){
-            return(data.location===location)
-        }
-
-        if(!location && !field){
-            return(data.type===type)
-        }
-
-        else{
-            return(data.field===field && data.type===type && data.location===location)
-        }
-
-    })
-    console.log(locationData)
-    setSearchData(locationData)
-
-}
+    const locationData = Volundata.filter((data) => {
+      if (!location && !field && !type) {
+        return Volundata;
+      } else if (!location && !type) {
+        return data.field === field;
+      } else if (!field && !type) {
+        return data.location === location;
+      } else if (!location && !field) {
+        return data.type === type;
+      } else if (!location) {
+        return data.type === type && data.field === field;
+      } else if (!type) {
+        return data.location === location && data.field === field;
+      } else if (!field) {
+        return data.type === type && data.location === location;
+      } else {
+        return (
+          data.field === field &&
+          data.type === type &&
+          data.location === location
+        );
+      }
+    });
+    console.log(locationData);
+    setSearchData(locationData);
+  };
 
   return (
     <>
       <Navbar3 />
-      
+
       {/* Search Bar */}
       <div className="enter">
         <form className="search-barr">
           <select
-            value={location}
-            onChange={(e) => setLocation(e.currentTarget.value)}
+            value={field}
+            onChange={(e) => setField(e.currentTarget.value)}
           >
             <option value="">Sector, Interested field</option>
             <option value="Environment">Environment</option>
             <option value="Business">Business</option>
             <option value="Public health">Public health</option>
-            <option value="Engineering">Engineering</option>
+            <option value="Technology">Technology</option>
           </select>
 
           <select
-            value={field}
-            onChange={(e) => setField(e.currentTarget.value)}
+            value={location}
+            onChange={(e) => setLocation(e.currentTarget.value)}
           >
             <option value="">City, State , Zip</option>
             <option value="Kathmandu">Kathmandu</option>
@@ -104,36 +92,59 @@ const Enter = () => {
       </div>
       {/* Containers */}
 
-
       <div className="pro-container">
-      {
-      searchData.slice(0, 6).map(data => {
-        return(<>
-    <div className="info">
+        {searchData.slice(0, 6).map((data) => {
+          return (
+            <>
+              <div className="info" key={data.id}>
+                <div className="pro-logo">
+                  <img src={data.picture} alt="pic" />
+                </div>
 
-    
-      <div key={data.id} className="pro-logo">
-         <img src={data.picture} alt="pic"/>
-      </div>
- 
-      <div className="pro-details">
-        <div key={data.id} className="book"> <h2>Program:&nbsp;{data.program}</h2><div className="bookmark"><FaRegBookmark/></div></div>
-        <div key={data.id}> <h3>Organization:&nbsp;{data.organization}</h3></div>
-        <div key={data.id}> <h3>Date & Time:&nbsp;{data.datantime}</h3></div>
-        <div key={data.id}> <h3>Location:&nbsp;{data.location}</h3></div>
-        <div key={data.id}> <h3>Duration:&nbsp;{data.duration}</h3></div>
-        <div key={data.id}> <h3>Type:&nbsp;{data.type}</h3></div>
-        <div key={data.id} className="book"> <h3>Stipend:&nbsp;{data.stipend}</h3><div >
-           
-           <input type="button" value="Want to Join?" className="but"></input>
-           </div></div>
-      </div>
-     </div>
-      
-      </>  )}
-        ) 
-        } 
-   
+                <div className="pro-details">
+                  <div className="book">
+                    {" "}
+                    <h2>Program:&nbsp;{data.program}</h2>
+                    <div className="bookmark">
+                      <FaRegBookmark />
+                    </div>
+                  </div>
+                  <div key={data.id}>
+                    {" "}
+                    <h3>Organization:&nbsp;{data.organization}</h3>
+                  </div>
+                  <div key={data.id}>
+                    {" "}
+                    <h3>Date & Time:&nbsp;{data.datentime}</h3>
+                  </div>
+                  <div key={data.id}>
+                    {" "}
+                    <h3>Location:&nbsp;{data.location}</h3>
+                  </div>
+                  <div key={data.id}>
+                    {" "}
+                    <h3>Duration:&nbsp;{data.duration}</h3>
+                  </div>
+                  <div key={data.id}>
+                    {" "}
+                    <h3>Type:&nbsp;{data.type}</h3>
+                  </div>
+                  <div className="book">
+                    {" "}
+                    <h3>Stipend:&nbsp;{data.stipend}</h3>
+                    <div>
+                      <input
+                        type="button"
+                        value="Want to Join?"
+                        className="but"
+                      ></input>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </>
+          );
+        })}
       </div>
     </>
   );
