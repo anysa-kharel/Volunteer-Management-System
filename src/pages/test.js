@@ -11,47 +11,50 @@ import { useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import Volundata from "../components/volundata";
 import SearchResults from './SearchResults';
-const Home = () => {
 
-  const [location, setLocation] = useState("");
-  const [field, setField] = useState("");
-  const [type, setType] = useState("");
-  const [searchData, setSearchData] = useState([]);
-const [click, setClick] = useState(false);
 
-const handleClick = (e) => {
-  setClick(true);
-  e.preventDefault();
-  console.log(location, field, type);
-  console.log(!location, !type);
+const Test = () => {
+   
+    const [location, setLocation] = useState("");
+    const [field, setField] = useState("");
+    const [type, setType] = useState("");
+    const [searchData, setSearchData] = useState([]);
+  const [click, setClick] = useState(false);
 
-  const locationData = Volundata.filter((data) => {
-    if (!location && !field && !type) {
-      return Volundata;
-    } else if (!location && !type) {
-      return data.field === field;
-    } else if (!field && !type) {
-      return data.location === location;
-    } else if (!location && !field) {
-      return data.type === type;
-    } else if (!location) {
-      return data.type === type && data.field === field;
-    } else if (!type) {
-      return data.location === location && data.field === field;
-    } else if (!field) {
-      return data.type === type && data.location === location;
-    } else {
-      return (
-        data.field === field &&
-        data.type === type &&
-        data.location === location
-      );
-    }
-  });
-  console.log(locationData);
-  setSearchData(locationData);
- 
-};
+    const handleClick = (e) => {
+        setClick(true);
+        e.preventDefault();
+        console.log(location, field, type);
+        console.log(!location, !type);
+    
+        const locationData = Volundata.filter((data) => {
+          if (!location && !field && !type) {
+            return Volundata;
+          } else if (!location && !type) {
+            return data.field === field;
+          } else if (!field && !type) {
+            return data.location === location;
+          } else if (!location && !field) {
+            return data.type === type;
+          } else if (!location) {
+            return data.type === type && data.field === field;
+          } else if (!type) {
+            return data.location === location && data.field === field;
+          } else if (!field) {
+            return data.type === type && data.location === location;
+          } else {
+            return (
+              data.field === field &&
+              data.type === type &&
+              data.location === location
+            );
+          }
+        });
+        console.log(locationData);
+        setSearchData(locationData);
+        <SearchResults {...searchData}/>
+      };
+
 
   return (
     <>
@@ -163,9 +166,7 @@ const handleClick = (e) => {
         <Footer />
       </div>
 
-    
-
     </>
   )
 }
-export default Home;
+export default Test;

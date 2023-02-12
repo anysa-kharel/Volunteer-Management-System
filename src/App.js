@@ -9,6 +9,7 @@ import Userprofile from './pages/Userprofile';
 import {Routes,Route } from 'react-router-dom';
 import SearchResults from './pages/SearchResults';
 import Signup1 from './pages/Orgsignup';
+import Test from './pages/test';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
     <Route exact path="/about" element={<About/>}/>
     <Route exact path="/userprofile" element={<Userprofile/>}/>  
     <Route path="/search" element={<SearchResults/>}/>
+    <Route path="/test" element={<Test/>}/>
   </Routes>
   
 
