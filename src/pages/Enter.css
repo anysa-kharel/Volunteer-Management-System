@@ -62,17 +62,17 @@
     background-color:#208ad548;
     display: flex;
     flex-direction: column;
-    margin: 0.3rem;
+    margin: 2rem;
 }
 
-/* .info{
+.info{
     display: flex;
     flex-direction: row;
     
-} */
+}
 
 .pro-details{
-    margin-left: 1%;
+    margin-left: 3%;
     margin-top: 2%;
     margin-bottom: 2%;
 
@@ -82,18 +82,32 @@
 }
 
 .pro-logo{
-    margin:4% ;
-    border: 1px solid black;
-    width:500px;
-    height:200px;
+    margin-top:10%;
+    margin-left:4%;
+    /* border: 1px solid black; */
+    width:400px;
+    height:229px;
 }
 
 .book{
     display: flex;
 }
 
+.book .h2{
+    font-size: 30px;
+    
+    font-family: 'Poppins', serif;
+}
+
+.book h3{
+    font-size: 14px;
+    font-weight:500;
+    color: rgb(0, 0, 0,0.5);
+    font-family: 'Poppins', serif;
+}
+
 .book .bookmark{
-    margin-right: 0.2rem;
+    margin-left:15rem;
     font-size: 30px;
     
     
@@ -107,6 +121,6 @@
   width: 200px;
   text-align: center;
   font-size: 16px;
-  margin-left: 28rem;
+  margin-left: 20rem;
   
 }

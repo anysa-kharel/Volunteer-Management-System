@@ -10,7 +10,7 @@ const Volundata = [
         "duration":"5 Hrs",
         image:"location",
         field:"Environment",
-        picture:"../assests/sanduk.jpg"
+        picture:"pimages/clean.jpg"
 
     },
     {
@@ -22,7 +22,8 @@ const Volundata = [
         "stipend":"Free",
         "type":"Unpaid",
         "duration":"7 Hrs",
-        field:"Education"
+        field:"Others",
+        picture:"pimages/empower.jpg"
     },
 
     {
@@ -34,7 +35,8 @@ const Volundata = [
         stipend:"1000",
         type:"Paid",
         duration:"3 Hrs",
-        field:"Others"
+        field:"Others",
+        picture:"/pimages/nepathya.jpg"
     },
 
     {
@@ -46,7 +48,8 @@ const Volundata = [
         stipend:"Free",
         type:"Unpaid",
         duration:"5 Hrs",
-        field:"Public health"
+        field:"Public health",
+        picture:"pimages/menstrual.jpg"
     },
 
     {
@@ -58,7 +61,8 @@ const Volundata = [
         stipend:"Free",
         type:"Unpaid",
         duration:"5 Hrs",
-        field:"Environment"
+        field:"Environment",
+        picture:"pimages/environmental.jpg"
     },
 
     {
@@ -70,7 +74,8 @@ const Volundata = [
         stipend:"500",
         type:"Paid",
         duration:"2 Hrs",
-        field:"Business"
+        field:"Business",
+        picture:"pimages/share.jpg"
     },
     
     {
@@ -82,7 +87,8 @@ const Volundata = [
         stipend:"500",
         type:"Paid",
         duration:"3 Hrs",
-        field:"Public health"
+        field:"Public health",
+        picture:"pimages/health.jpg"
     },
 
     {
@@ -94,7 +100,8 @@ const Volundata = [
         stipend:"Free",
         type:"Unpaid",
         duration:"Flexible",
-        field:"Public health"
+        field:"Public health",
+        picture:"pimages/blood.jpg"
     },
 
     {
@@ -106,7 +113,8 @@ const Volundata = [
         stipend:"500",
         type:"Paid",
         duration:"2 Hrs",
-        field:"Technology"
+        field:"Technology",
+        picture:"pimages/UI-UX.jpg"
     },
 
     {
@@ -118,7 +126,8 @@ const Volundata = [
         stipend:"500",
         type:"Paid",
         duration:"2 Hrs",
-        field:"Technology"
+        field:"Technology",
+        picture:"pimages/react.jpg"
     },
     {
         "id":"11", 
@@ -129,7 +138,8 @@ const Volundata = [
         stipend:"Free",
         type:"Unaid",
         duration:"3 Hrs",
-        field:"Environment"
+        field:"Environment",   
+        picture:"pimages/tree.jpg"
     }
 ]
 

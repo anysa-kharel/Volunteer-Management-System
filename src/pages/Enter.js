@@ -11,7 +11,7 @@ const Enter = () => {
   const [location, setLocation] = useState("");
   const [field, setField] = useState("");
   const [type, setType] = useState("");
-  const [searchData, setSearchData] = useState([]);
+  const [searchData, setSearchData] = useState(Volundata);
   const [click, setClick] = useState(false);
 
   const handleClick = (e) => {
@@ -63,6 +63,7 @@ const Enter = () => {
             <option value="Business">Business</option>
             <option value="Public health">Public health</option>
             <option value="Technology">Technology</option>
+            <option value="Others">Others</option>
           </select>
 
           <select
@@ -94,11 +95,12 @@ const Enter = () => {
 
       <div className="pro-container">
         {searchData.slice(0, 6).map((data) => {
+          const {picture}=data;
           return (
             <>
               <div className="info" key={data.id}>
-                <div className="pro-logo">
-                  <img src={data.picture} alt="pic" />
+                <div >
+                  <img src={picture} alt="pic" className="pro-logo"/>
                 </div>
 
                 <div className="pro-details">
@@ -109,23 +111,23 @@ const Enter = () => {
                       <FaRegBookmark />
                     </div>
                   </div>
-                  <div key={data.id}>
+                  <div key={data.id} className="book">
                     {" "}
                     <h3>Organization:&nbsp;{data.organization}</h3>
                   </div>
-                  <div key={data.id}>
+                  <div key={data.id} className="book">
                     {" "}
                     <h3>Date & Time:&nbsp;{data.datentime}</h3>
                   </div>
-                  <div key={data.id}>
+                  <div key={data.id} className="book">
                     {" "}
                     <h3>Location:&nbsp;{data.location}</h3>
                   </div>
-                  <div key={data.id}>
+                  <div key={data.id} className="book">
                     {" "}
                     <h3>Duration:&nbsp;{data.duration}</h3>
                   </div>
-                  <div key={data.id}>
+                  <div key={data.id} className="book">
                     {" "}
                     <h3>Type:&nbsp;{data.type}</h3>
                   </div>

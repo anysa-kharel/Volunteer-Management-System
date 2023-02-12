@@ -7,89 +7,14 @@ import "../components/Form.css";
 import { BiSearch } from "react-icons/bi";
 import { FaRegBookmark } from "react-icons/fa";
 
-const Enter = () => {
-  const [location, setLocation] = useState("");
-  const [field, setField] = useState("");
-  const [type, setType] = useState("");
-  const [searchData, setSearchData] = useState([]);
-  const [click, setClick] = useState(false);
-
-  const handleClick = (e) => {
-    setClick(true);
-    e.preventDefault();
-    console.log(location, field, type);
-    console.log(!location, !type);
-
-    const locationData = Volundata.filter((data) => {
-      if (!location && !field && !type) {
-        return Volundata;
-      } else if (!location && !type) {
-        return data.field === field;
-      } else if (!field && !type) {
-        return data.location === location;
-      } else if (!location && !field) {
-        return data.type === type;
-      } else if (!location) {
-        return data.type === type && data.field === field;
-      } else if (!type) {
-        return data.location === location && data.field === field;
-      } else if (!field) {
-        return data.type === type && data.location === location;
-      } else {
-        return (
-          data.field === field &&
-          data.type === type &&
-          data.location === location
-        );
-      }
-    });
-    console.log(locationData);
-    setSearchData(locationData);
-  };
+const SearchResults = (searchData) => {
+  // const [searchData, setSearchData] = useState([]);
+  const {id,program,picture,datentime,location,duration,stipend}=searchData
 
   return (
     <>
       <Navbar3 />
-
-      {/* Search Bar */}
-      <div className="enter">
-        <form className="search-barr">
-          <select
-            value={field}
-            onChange={(e) => setField(e.currentTarget.value)}
-          >
-            <option value="">Sector, Interested field</option>
-            <option value="Environment">Environment</option>
-            <option value="Business">Business</option>
-            <option value="Public health">Public health</option>
-            <option value="Engineering">Engineering</option>
-          </select>
-
-          <select
-            value={location}
-            onChange={(e) => setLocation(e.currentTarget.value)}
-          >
-            <option value="">City, State , Zip</option>
-            <option value="Kathmandu">Kathmandu</option>
-            <option value="Pokhara">Pokhara</option>
-            <option value="Baglung">Baglung</option>
-            <option value="Butwal">Butwal</option>
-          </select>
-
-          <select value={type} onChange={(e) => setType(e.currentTarget.value)}>
-            <option value="">Select Type</option>
-            <option value="Paid">Paid</option>
-            <option value="Unpaid">Unpaid</option>
-          </select>
-
-          <button onClick={handleClick}>
-            <BiSearch size={20} />
-          </button>
-        </form>
-
-        <h2>Recommended for you</h2>
-        <h3>Based on your profile and search history.</h3>
-      </div>
+  
       {/* Containers */}
 
       <div className="pro-container">
@@ -150,4 +75,4 @@ const Enter = () => {
   );
 };
 
-export default Enter;
+export default SearchResults;
