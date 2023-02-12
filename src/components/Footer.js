@@ -19,8 +19,8 @@ const Footer = () => {
                 </div>
                 <div className='about-company footer-comp'>
                     <h2>About Title</h2>
-                    <Link to="#">About Us</Link>
-                    <Link to="#">Contact Us </Link>
+                    <Link to="/about">About Us</Link>
+                    <Link to="/contact">Contact Us </Link>
                     <Link to="#">Terms and condition</Link>
                     <Link to="#">Privacy Policy-Title</Link>
                     <Link to="#">FAQ's</Link>
@@ -29,7 +29,7 @@ const Footer = () => {
                     <h2>For volunteer</h2>
                     <Link to="#">Work Listing</Link>
                     <Link to="#">How to apply? </Link>
-                    <Link to="#">Login</Link>
+                    <Link to="/login">Login</Link>
                     <Link to="#">Signup</Link>
                 </div>
                 <div className='organization footer-comp'>

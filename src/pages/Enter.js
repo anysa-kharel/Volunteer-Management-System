@@ -4,7 +4,6 @@ import { useState } from "react";
 import "./Enter.css";
 import Volundata from "../components/volundata";
 import "../components/Form.css";
-import Footer from "../components/Footer";
 import { BiSearch } from "react-icons/bi";
 import { FaRegBookmark } from "react-icons/fa";
 
@@ -106,11 +105,10 @@ const Enter = () => {
 
                 <div className="pro-details">
                   <div className="book">
+                  
                     {" "}
                     <h2>Program:&nbsp;{data.program}</h2>
-                    <div className="bookmark">
-                      <FaRegBookmark />
-                    </div>
+                    
                   </div>
                   <div key={data.id} className="book">
                     {" "}
@@ -144,12 +142,15 @@ const Enter = () => {
                     </div>
                   </div>
                 </div>
+                <div className="bookmark">
+                      <FaRegBookmark />
+                    </div>
               </div>
+
             </>
           );
         })}
       </div>
-{/* <Footer/> */}
     </>
   );
 };

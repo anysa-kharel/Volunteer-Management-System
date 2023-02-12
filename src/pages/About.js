@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div>
       <Navbar/>
-      About Page
+      Will update soon...
      
     </div>
     
