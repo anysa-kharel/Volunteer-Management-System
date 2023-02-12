@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.user-profile{
+    display: flex;
+}
+
+.leftbar{
+display: flex;
+
+}
+
+.photo{
+    display: flex;
+    flex-direction: column;
+    }
+
+    img{
+        height: 20px;
+    }
