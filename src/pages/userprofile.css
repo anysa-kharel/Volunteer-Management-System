@@ -6,18 +6,77 @@
 
 .user-profile{
     display: flex;
+   
 }
 
 .leftbar{
+    border: 1px solid grey;
+    width:30%;
 display: flex;
+flex-direction: column;
+margin:4%;
+padding: 2%;
+
+font-family: 'Poppins', serif;
 
 }
 
 .photo{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .photo button{
+        width:140px;
     }
 
     img{
         height: 20px;
     }
+    .achieve{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .badge{
+        display: flex;
+        justify-content: center;
+    }
+.link{
+    display: flex;
+    flex-direction: column;
+    gap:2vh;
+    margin:5px;
+}
+
+ .link-item{
+    display: flex;
+    border: 1px solid black;
+    padding: 3px;
+    justify-content: center;
+   
+    /* flex-direction: column; */
+} .rightbar{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin:4%;
+    padding:2%;
+    padding-right: 5%;
+    width:60%;
+    font-family: 'Poppins', serif;
+
+}
+.name input{
+    width:40vh;
+    height:30px;
+    padding: 5px;
+}
+.rightbar h2{
+    font-size: 16px;
+    font-weight: 450;
+}
+

@@ -62,7 +62,7 @@ const Navbar3 = () => {
             <i className=""></i>
           </button>
           <div className="dropdown-content signup1 acc">
-            <Link to="/profile">My Profile</Link>
+            <Link to="/userprofile">My Profile</Link>
             <Link to="/my-work">Applied Work</Link>
             <Link to="/fav-work">Favourite Work</Link>
             <Link to="/logout">Logout</Link>
