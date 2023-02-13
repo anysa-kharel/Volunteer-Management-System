@@ -144,7 +144,7 @@ const Enter = () => {
                   </div>
                 </div>
                 <div className="bookmark">
-                      <FaRegBookmark />
+                      <FaRegBookmark size={25}/>
                     </div>
               </div>
 
