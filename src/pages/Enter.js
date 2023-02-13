@@ -6,6 +6,7 @@ import Volundata from "../components/volundata";
 import "../components/Form.css";
 import { BiSearch } from "react-icons/bi";
 import { FaRegBookmark } from "react-icons/fa";
+import Footer from "../components/Footer";
 
 const Enter = () => {
   const [location, setLocation] = useState("");
@@ -150,7 +151,12 @@ const Enter = () => {
             </>
           );
         })}
+        
       </div>
+
+      {/* Footer  */}
+      <div className="foot"> <Footer/></div>
+      
     </>
   );
 };
