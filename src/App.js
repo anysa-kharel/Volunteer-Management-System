@@ -5,6 +5,7 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import Home from './pages/Home';
 import Enter from './pages/Enter';
+import Userprofile from './pages/Userprofile';
 import {Routes,Route } from 'react-router-dom';
 import SearchResults from './pages/SearchResults';
 import Signup1 from './pages/Orgsignup';
@@ -22,7 +23,8 @@ function App() {
     <Route exact path="/user-signup" element={<Signup/>}/> 
     <Route exact path="/org-signup" element={<Signup1/>}/> 
     <Route exact path="/contact" element={<Contact/>}/>
-    <Route exact path="/about" element={<About/>}/>  
+    <Route exact path="/about" element={<About/>}/>
+    <Route exact path="/userprofile" element={<Userprofile/>}/>  
     <Route path="/search" element={<SearchResults/>}/>
     <Route path="/test" element={<Test/>}/>
   </Routes>

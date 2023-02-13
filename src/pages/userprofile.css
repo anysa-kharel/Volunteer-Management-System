@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    /* --primary-color:#2089D5; */
+    --primary-color: #98d6ff;
+}
+
+.user-profile {
+    display: flex;
+
+}
+
+.leftbar {
+    /* border: 1px solid grey; */
+    box-shadow: 0.5px 0.5px 3px grey;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+    padding: 2%;
+gap:10px;
+    font-family: 'Poppins', serif;
+
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -90px;
+    
+}
+
+.profilepic{
+    margin-top: -10px;
+    border-radius: 100px;
+
+}
+
+.photo button {
+    width: 140px;
+}
+
+
+.achieve {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge {
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin: 5px;
+}
+
+.link-item {
+    display: flex;
+    box-shadow: 1px 1px 3px grey;
+    padding: 3px;
+
+    justify-content: center;
+    background-color: var(--primary-color);
+
+    /* flex-direction: column; */
+}
+
+.rightbar {
+    /* border: 1px solid black; */
+    box-shadow: 0.5px 0.5px 3px grey;
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+    padding: 2%;
+    padding-right: 5%;
+    width: 60%;
+    font-family: 'Poppins', serif;
+    gap: 10px;
+
+}
+
+.rightbar h2 {
+    font-size: 16px;
+    font-weight: 450;
+}
+
+.rightbar .pro-details {
+    margin-left: 5%;
+    margin-top: 7%;
+    margin-bottom: 2%;
+
+}
+
+.rightbar input {
+    width: 35vh;
+    height: 30px;
+    padding: 5px;
+}
+
+.name1 {
+    display: flex;
+    gap: 10%;
+}
+
+.yess {
+    display: flex;
+    gap: 10%;
+}
+
+.stat {
+    display: flex;
+    margin-top: 10px;
+    ;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stat-box {
+    display: flex;
+    gap: 10%;
+    /* justify-content: space-evenly; */
+}
+
+.stat-box1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 210px;
+    padding: 18px;
+    align-items: center;
+    /* border: 1px solid black; */
+    box-shadow: 1px 1px 3px grey;
+    height: 100px;
+    background-color: var(--primary-color);
+}

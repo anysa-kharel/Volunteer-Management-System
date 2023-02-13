@@ -106,11 +106,10 @@ const Enter = () => {
 
                 <div className="pro-details">
                   <div className="book">
+                  
                     {" "}
                     <h2>Program:&nbsp;{data.program}</h2>
-                    <div className="bookmark">
-                      <FaRegBookmark />
-                    </div>
+                    
                   </div>
                   <div key={data.id} className="book">
                     {" "}
@@ -144,7 +143,11 @@ const Enter = () => {
                     </div>
                   </div>
                 </div>
+                <div className="bookmark">
+                      <FaRegBookmark />
+                    </div>
               </div>
+
             </>
           );
         })}

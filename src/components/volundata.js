@@ -2,7 +2,7 @@ const Volundata = [
     {
        "id":"1",  
         "program":"Clean Pokhara",
-        "organization":"Mnasty Nepal",
+        "organization":"Amnesty Nepal",
         "datentime":"2079/11/2 11:00 A.M",
         "location":"Pokhara",
         "stipend":"Free",

@@ -68,6 +68,20 @@
 .info{
     display: flex;
     flex-direction: row;
+    gap:15px;
+    /* border: 1px solid black; */
+    /* width: 80%; */
+
+    
+}
+
+.bookmark{
+    display:flex;
+    justify-content: right;
+    margin-top: 30px;
+    margin-left: 10%;
+    
+    margin-right: 10px;
     
 }
 
@@ -75,7 +89,8 @@
     margin-left: 3%;
     margin-top: 2%;
     margin-bottom: 2%;
-
+    width:50%;
+    
 }
 .pro-details div{
     margin: 0.3rem;
@@ -93,9 +108,8 @@
     display: flex;
 }
 
-.book .h2{
+.book h2{
     font-size: 30px;
-    
     font-family: 'Poppins', serif;
 }
 
