@@ -79,7 +79,7 @@
     display:flex;
     justify-content: right;
     margin-top: 30px;
-    margin-left: 10%;
+    margin-left: 5%;
     
     margin-right: 10px;
     
@@ -90,6 +90,7 @@
     margin-top: 2%;
     margin-bottom: 2%;
     width:50%;
+    border: 1px solid black;
     
 }
 .pro-details div{
