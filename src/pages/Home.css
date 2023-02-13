@@ -65,6 +65,7 @@ justify-content: center;
     font-weight: 600;
     border-radius: 5px;
     letter-spacing: 0.03rem;
+    box-shadow: 1px 1px 5px rgb(174, 163, 163);
 
 }
 #post-button a{
@@ -98,7 +99,12 @@ justify-content: center;
     /* border: 0.1px solid black; */
     padding: 20px;
     width:20%;
-    background-color: var(--primary-color);
+    box-shadow: 1px 1px 3px grey;
+    /* background-color: var(--primary-color); */
+    color:black;
+
+}
+.card-item a {
     color:black;
 
 }
@@ -156,7 +162,7 @@ justify-content: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid grey;
+    box-shadow: 1px 1px 3px grey;
     padding: 10px;
     width: 200px;
     margin:30px;

@@ -130,12 +130,22 @@ const handleClick = (e) => {
             <Link className="cat-1 no_underline" to="/login">
               <GrOrganization size={38} />
               <h2 >HEALTH</h2>
-              <h4>(2 vacancies)</h4>
+              <h4>(3 vacancies)</h4>
             </Link>
 
             <Link className="cat-1 no_underline" to="/login">
               <GrOrganization size={38} />
-              <h2 >HEALTH</h2>
+              <h2 >Technology</h2>
+              <h4>(2 vacancies)</h4>
+            </Link>
+            <Link className="cat-1 no_underline" to="/login">
+              <GrOrganization size={38} />
+              <h2 >Environment</h2>
+              <h4>(2 vacancies)</h4>
+            </Link>
+            <Link className="cat-1 no_underline" to="/login">
+              <GrOrganization size={38} />
+              <h2 >Business</h2>
               <h4>(2 vacancies)</h4>
             </Link>
             <Link className="cat-1 no_underline" to="/login">
@@ -145,17 +155,7 @@ const handleClick = (e) => {
             </Link>
             <Link className="cat-1 no_underline" to="/login">
               <GrOrganization size={38} />
-              <h2 >HEALTH</h2>
-              <h4>(2 vacancies)</h4>
-            </Link>
-            <Link className="cat-1 no_underline" to="/login">
-              <GrOrganization size={38} />
-              <h2 >HEALTH</h2>
-              <h4>(2 vacancies)</h4>
-            </Link>
-            <Link className="cat-1 no_underline" to="/login">
-              <GrOrganization size={38} />
-              <h2 >HEALTH</h2>
+              <h2 >Others</h2>
               <h4>(2 vacancies)</h4>
             </Link>
           </div>

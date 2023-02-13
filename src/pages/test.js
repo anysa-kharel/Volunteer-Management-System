@@ -1,69 +1,69 @@
-import React from 'react'
-import Navbar2 from '../components/Navbar2'
-import Form from '../components/Form';
-import Footer from '../components/Footer'
-import { AiOutlinePlus } from 'react-icons/ai';
-import { ImUserCheck } from 'react-icons/im';
-import { GrOrganization } from 'react-icons/gr';
-import { Link } from "react-router-dom";
-import './Home.css'
+import React from "react";
+import Navbar3 from "../components/Navbar3";
 import { useState } from "react";
-import { BiSearch } from "react-icons/bi";
+import "./Enter.css";
 import Volundata from "../components/volundata";
-import SearchResults from './SearchResults';
+import "../components/Form.css";
+import { BiSearch } from "react-icons/bi";
+import { FaRegBookmark } from "react-icons/fa";
+import { FaBookmark } from "react-icons/fa";
+import Footer from "../components/Footer";
+import Bookmark from "../components/Bookmark";
 
-
-const Test = () => {
-   
-    const [location, setLocation] = useState("");
-    const [field, setField] = useState("");
-    const [type, setType] = useState("");
-    const [searchData, setSearchData] = useState([]);
+const Enter = () => {
+  const [location, setLocation] = useState("");
+  const [field, setField] = useState("");
+  const [type, setType] = useState("");
+  const [searchData, setSearchData] = useState(Volundata);
   const [click, setClick] = useState(false);
 
-    const handleClick = (e) => {
-        setClick(true);
-        e.preventDefault();
-        console.log(location, field, type);
-        console.log(!location, !type);
-    
-        const locationData = Volundata.filter((data) => {
-          if (!location && !field && !type) {
-            return Volundata;
-          } else if (!location && !type) {
-            return data.field === field;
-          } else if (!field && !type) {
-            return data.location === location;
-          } else if (!location && !field) {
-            return data.type === type;
-          } else if (!location) {
-            return data.type === type && data.field === field;
-          } else if (!type) {
-            return data.location === location && data.field === field;
-          } else if (!field) {
-            return data.type === type && data.location === location;
-          } else {
-            return (
-              data.field === field &&
-              data.type === type &&
-              data.location === location
-            );
-          }
-        });
-        console.log(locationData);
-        setSearchData(locationData);
-        
-      };
+  const handleClick = (e) => {
+    setClick(true);
+    e.preventDefault();
+    console.log(location, field, type);
+    console.log(!location, !type);
 
+    const locationData = Volundata.filter((data) => {
+      if (!location && !field && !type) {
+        return Volundata;
+      } else if (!location && !type) {
+        return data.field === field;
+      } else if (!field && !type) {
+        return data.location === location;
+      } else if (!location && !field) {
+        return data.type === type;
+      } else if (!location) {
+        return data.type === type && data.field === field;
+      } else if (!type) {
+        return data.location === location && data.field === field;
+      } else if (!field) {
+        return data.type === type && data.location === location;
+      } else {
+        return (
+          data.field === field &&
+          data.type === type &&
+          data.location === location
+        );
+      }
+    });
+    console.log(locationData);
+    setSearchData(locationData);
+
+    // const [bookmarked, setBookmarked] = useState(false);
+
+    // const toggleBookmark = () => {
+    //   setBookmarked(!bookmarked);
+    // }
+
+  };
 
   return (
     <>
-      <div>
-        <section className='image'>
-          <Navbar2 />
-          <div className='form-comp'>
-          <div> <h1>"Connecting Kindness, Streamlining Volunteering"</h1>
-        <form >
+      <Navbar3 />
+
+      {/* Search Bar */}
+      <div className="enter">
+        <form className="search-barr">
           <select
             value={field}
             onChange={(e) => setField(e.currentTarget.value)}
@@ -92,82 +92,80 @@ const Test = () => {
             <option value="Paid">Paid</option>
             <option value="Unpaid">Unpaid</option>
           </select>
-           
-           
+
           <button onClick={handleClick}>
-          <Link to="/search"> <BiSearch size={20} /></Link>
+            <BiSearch size={20} />
           </button>
         </form>
-        </div> 
 
+        <h2>Recommended for you</h2>
+        <h3>Based on your profile and search history.</h3>
+      </div>
+      {/* Containers */}
 
-            <div id='post-button'><a href='#'><h2>Post a Volunteering work here!</h2></a></div>  </div>
-        </section>
+      <div className="pro-container">
+        {searchData.slice(0, 6).map((data) => {
+          const {picture}=data;
+          return (
+            <>
+              <div className="info" key={data.id}>
+                <div >
+                  <img src={picture} alt="pic" className="pro-logo"/>
+                </div>
 
+                <div className="pro-details">
+                  <div className="book">
+                  
+                    {" "}
+                    <h2>Program:&nbsp;{data.program}</h2>
+                    
+                  </div>
+                  <div key={data.id} className="book">
+                    {" "}
+                    <h3>Organization:&nbsp;{data.organization}</h3>
+                  </div>
+                  <div key={data.id} className="book">
+                    {" "}
+                    <h3>Date & Time:&nbsp;{data.datentime}</h3>
+                  </div>
+                  <div key={data.id} className="book">
+                    {" "}
+                    <h3>Location:&nbsp;{data.location}</h3>
+                  </div>
+                  <div key={data.id} className="book">
+                    {" "}
+                    <h3>Duration:&nbsp;{data.duration}</h3>
+                  </div>
+                  <div key={data.id} className="book">
+                    {" "}
+                    <h3>Type:&nbsp;{data.type}</h3>
+                  </div>
+                  <div className="book">
+                    {" "}
+                    <h3>Stipend:&nbsp;{data.stipend}</h3>
+                    <div>
+                      <input
+                        type="button"
+                        value="Want to Join?"
+                        className="but"
+                      ></input>
+                    </div>
+                  </div>
+                </div>
+                <Bookmark/>
+              </div>
 
-
-        <section className='card'>
-          <div className='card-item card1 '>
-            <a> <AiOutlinePlus size={45} /></a>
-            <h1>152</h1>
-            <h3>Work added</h3>
-          </div>
-          <div className='card-item card2'>
-            <a> <ImUserCheck size={38} /></a>
-            <h1>2000</h1>
-            <h3>Active Volunteers</h3>
-
-          </div>
-          <div className='card-item card3'>
-            <a> <GrOrganization size={38} /></a>
-            <h1>98</h1>
-            <h3>Active organizations</h3>
-          </div>
-        </section>
-
-        <section className='categories'>
-
-          <div className='line'></div>
-          <h1>Popular Volunteering Categories</h1>
-          <div className='categories-item'>
-
-            <Link className="cat-1 no_underline" to="/login">
-              <GrOrganization size={38} />
-              <h2 >HEALTH</h2>
-              <h4>(2 vacancies)</h4>
-            </Link>
-
-            <Link className="cat-1 no_underline" to="/login">
-              <GrOrganization size={38} />
-              <h2 >HEALTH</h2>
-              <h4>(2 vacancies)</h4>
-            </Link>
-            <Link className="cat-1 no_underline" to="/login">
-              <GrOrganization size={38} />
-              <h2 >HEALTH</h2>
-              <h4>(2 vacancies)</h4>
-            </Link>
-            <Link className="cat-1 no_underline" to="/login">
-              <GrOrganization size={38} />
-              <h2 >HEALTH</h2>
-              <h4>(2 vacancies)</h4>
-            </Link>
-            <Link className="cat-1 no_underline" to="/login">
-              <GrOrganization size={38} />
-              <h2 >HEALTH</h2>
-              <h4>(2 vacancies)</h4>
-            </Link>
-            <Link className="cat-1 no_underline" to="/login">
-              <GrOrganization size={38} />
-              <h2 >HEALTH</h2>
-              <h4>(2 vacancies)</h4>
-            </Link>
-          </div>
-        </section>
-        <Footer />
+            </>
+          );
+        })}
+        
       </div>
 
+      {/* Footer  */}
+      <div className="foot"> <Footer/></div>
+      
     </>
-  )
-}
-export default Test;
+  );
+};
+
+export default Enter;

@@ -7,6 +7,7 @@ import "../components/Form.css";
 import { BiSearch } from "react-icons/bi";
 import { FaRegBookmark } from "react-icons/fa";
 import Footer from "../components/Footer";
+import Bookmark from "../components/Bookmark";
 
 const Enter = () => {
   const [location, setLocation] = useState("");
@@ -144,7 +145,8 @@ const Enter = () => {
                   </div>
                 </div>
                 <div className="bookmark">
-                      <FaRegBookmark size={25}/>
+                      {/* <FaRegBookmark size={25}/> */}
+                      <Bookmark/>
                     </div>
               </div>
 
