@@ -61,7 +61,7 @@ const handleClick = (e) => {
           <div className='form-comp'>
           <div> <h1>"Connecting Kindness, Streamlining Volunteering"</h1>
         <form >
-          <select
+          <select className='selection'
             value={field}
             onChange={(e) => setField(e.currentTarget.value)}
           >
@@ -91,7 +91,7 @@ const handleClick = (e) => {
           </select>
 
           <button onClick={handleClick}>
-            <BiSearch size={20} />
+            <BiSearch size={20} style={{color:"black"}}/>
           </button>
         </form>
         </div> 

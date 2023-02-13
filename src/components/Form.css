@@ -13,15 +13,24 @@ form{
 form select{
     height: 35px;
     width:250px;
-    background-color: var(--primary-color);
+    background-color:white;
     border: none;
     font-family: 'Poppins', serif;
+    border-radius: 5px;
+    letter-spacing: 0.03rem;
+    
 }
+form select option{
+    /* padding: 100px; */
+}
+
 form button{
     width:40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: white;
     border: none;
+    border-radius: 5px;
+    
 }
