@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from "../components/Navbar1.js";
+import Navbar3 from "../components/Navbar3.js";
 import Footer from '../components/Footer.js';
 import { SlBadge } from 'react-icons/sl';
 import profileimage from '../assests/profile.jpg'
@@ -13,14 +13,14 @@ import loginimage from '../assests/bg1.jpg'
 const Userprofile = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar3 />
       <section className='user-profile'>
         <div className='leftbar'>
         <img className='profilepic' src={profilephoto}></img>
           <div className='photo'>
             
             <h1>Namo Sapkota</h1>
-            <button>Edit profile</button>
+            <button className="but_edit">Edit profile</button>
           </div>
           <div className='achieve'>
             <h2>Achievements:</h2> </div>
@@ -33,10 +33,10 @@ const Userprofile = () => {
           </div>
 
           <div className='link' >
-            <Link className='link-item' to="/userprofile">My Profile</Link>
+            <Link className='link-itemp' to="/userprofile">My Profile</Link>
             <Link className='link-item' to="/my-work">Applied Work</Link>
             <Link className='link-item' to="/fav-work">Favourite Work</Link>
-            <Link className='link-item' to="/logout">Logout</Link>
+            <Link className='link-item' to="/home">Logout</Link>
           </div>
 
         </div>
@@ -47,22 +47,22 @@ const Userprofile = () => {
           <div className='name1'>
             <div className='firstname'>
               <h2>First Name:</h2>
-              <input type="text"></input>
+              <input type="text" placeholder="Namo"></input>
             </div>
             <div className='lastname'>
               <h2>Last Name:</h2>
-              <input type="text"></input>
+              <input type="text" placeholder='Sapkota'></input>
             </div>
           </div>
 
           <div className='yess'>
             <div className='email-'>
               <h2>Email:</h2>
-              <input type="email"></input>
+              <input type="email" placeholder='namosapkota@gmail.com'></input>
             </div>
             <div className='fields'>
               <h2>Interested fields:</h2>
-              <input type="text"></input>
+              <input type="text" placeholder="Technology,Environment"></input>
             </div>
           </div>
 
@@ -79,8 +79,8 @@ const Userprofile = () => {
             
             </div>
           </div>
-
-          <h1>Work Applied Recently</h1>
+          
+          <h1 className="mt-1rem">Work Applied Recently</h1>
             <div className="info">
               <div >
                 <img src={loginimage} alt="pic" className="pro-logo" />
