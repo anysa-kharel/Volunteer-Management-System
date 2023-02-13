@@ -90,8 +90,11 @@
     margin-top: 2%;
     margin-bottom: 2%;
     width:50%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     
+}
+input .but{
+    margin-right: 20px;
 }
 .pro-details div{
     margin: 0.3rem;
@@ -136,7 +139,7 @@
   width: 200px;
   text-align: center;
   font-size: 16px;
-  margin-left: 20rem;
+  margin-left: 14rem;
   
 }
 
