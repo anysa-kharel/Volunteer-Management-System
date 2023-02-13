@@ -32,6 +32,14 @@ gap:10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: -90px;
+    
+}
+
+.profilepic{
+    margin-top: -10px;
+    border-radius: 100px;
+
 }
 
 .photo button {

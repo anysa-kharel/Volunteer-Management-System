@@ -6,6 +6,7 @@ import profileimage from '../assests/profile.jpg'
 import { Link } from 'react-router-dom';
 import "../pages/userprofile.css"
 import { FaRegBookmark } from "react-icons/fa";
+import profilephoto from '../assests/profilephoto.png'
 import loginimage from '../assests/bg1.jpg'
 
 
@@ -15,8 +16,9 @@ const Userprofile = () => {
       <Navbar />
       <section className='user-profile'>
         <div className='leftbar'>
+        <img className='profilepic' src={profilephoto}></img>
           <div className='photo'>
-            {/* <img src={loginimage}></img> */}
+            
             <h1>Namo Sapkota</h1>
             <button>Edit profile</button>
           </div>
