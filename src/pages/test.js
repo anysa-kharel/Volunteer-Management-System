@@ -52,7 +52,7 @@ const Test = () => {
         });
         console.log(locationData);
         setSearchData(locationData);
-        <SearchResults {...searchData}/>
+        
       };
 
 
@@ -92,9 +92,10 @@ const Test = () => {
             <option value="Paid">Paid</option>
             <option value="Unpaid">Unpaid</option>
           </select>
-
+           
+           
           <button onClick={handleClick}>
-            <BiSearch size={20} />
+          <Link to="/search"> <BiSearch size={20} /></Link>
           </button>
         </form>
         </div> 

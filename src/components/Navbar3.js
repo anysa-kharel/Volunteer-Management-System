@@ -12,9 +12,9 @@ const Navbar3 = () => {
     <>
       <div className="main-nav">
         <div className="title">
-          <Link className="no_underline" to="/home">
-            <img src= {logo} className="logo"/>
-          </Link>
+          {/* <Link className="no_underline" to="/home"> */}
+            <img src= {logo} className="logo1"/>
+          {/* </Link> */}
         </div>
 
         <div className="Menus">
@@ -65,7 +65,7 @@ const Navbar3 = () => {
             <Link to="/profile">My Profile</Link>
             <Link to="/my-work">Applied Work</Link>
             <Link to="/fav-work">Favourite Work</Link>
-            <Link to="/logout">Logout</Link>
+            <Link to="/home">Logout</Link>
           </div>
         </div>
 

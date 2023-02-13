@@ -6,6 +6,7 @@ import { TiSocialFacebookCircular } from 'react-icons/ti';
 import { TiSocialLinkedinCircular } from 'react-icons/ti';
 import { TiSocialInstagram } from 'react-icons/ti';
 import { TiSocialTwitterCircular } from 'react-icons/ti';
+import logo from "../assests/logo2.png"
 
 
 const Footer = () => {
@@ -14,8 +15,10 @@ const Footer = () => {
         <footer>
             <div id="comp1">
                 <div id="title">
-                    <h2>logo</h2>
-                    <p> Volunteer is an volunteer-focused platform started with the main focus of helping volunteer to get oppurtunities to help.</p>
+                <Link className="no_underline" to="/home">
+          <img src= {logo} className="logo"/>
+          </Link>
+                    <p> Connect is an volunteer-focused platform started with the main focus of helping volunteer to get oppurtunities to help.</p>
                 </div>
                 <div className='about-company footer-comp'>
                     <h2>About Title</h2>
