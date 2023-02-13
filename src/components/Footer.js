@@ -18,7 +18,7 @@ const Footer = () => {
                 <Link className="no_underline" to="/home">
           <img src= {logo} className="logo"/>
           </Link>
-                    <p> Connect is an volunteer-focused platform started with the main focus of helping volunteer to get oppurtunities to help.</p>
+                    <p className="intro"> Connect is an volunteer-focused platform started with the main focus of helping volunteer to get oppurtunities to help.</p>
                 </div>
                 <div className='about-company footer-comp'>
                     <h2>About Title</h2>

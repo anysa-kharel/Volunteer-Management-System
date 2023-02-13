@@ -115,7 +115,7 @@ const handleClick = (e) => {
 
           </div>
           <div className='card-item card3'>
-            <a> <GrOrganization size={38} /></a>
+            <a > <GrOrganization size={38} /></a>
             <h1>98</h1>
             <h3>Active organizations</h3>
           </div>

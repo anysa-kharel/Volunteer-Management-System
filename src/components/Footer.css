@@ -13,15 +13,19 @@
 }
 footer{
     /* border: 1px solid grey; */
-    background-color: var(--primary-color);
+    background-color: black;
+    color: white;
     display: flex;
-    padding:10px;
+    padding:20px 50px;
     width: 100%;
     justify-content: space-between;
     display: flex;
     flex-direction: column;
    
-
+}
+.intro{
+    line-height: 25px;
+    letter-spacing: 0.03em;
 }
 #comp1{
     display: flex;
@@ -31,6 +35,8 @@ footer{
 .footer-comp{
     display: flex;
     flex-direction:column;
+    line-height: 30px;
+    letter-spacing: 0.03em;
     
 }
 #title{
@@ -43,11 +49,11 @@ footer h2{
 a{
     text-decoration: none;
     font-size: 14px;
-    color: black;
+    color:white;
     cursor: pointer ;
 }
 footer a:hover{
-    color: white;
+    color: rgb(219, 214, 214);
 }
 .lastline{
     display: flex;
