@@ -77,6 +77,19 @@ gap:10px;
     /* flex-direction: column; */
 }
 
+.link-itemp {
+    display: flex;
+    box-shadow: 1px 1px 3px grey;
+    padding: 3px;
+
+    justify-content: center;
+    background-color:white;
+
+    /* flex-direction: column; */
+}
+
+
+
 .rightbar {
     /* border: 1px solid black; */
     box-shadow: 0.5px 0.5px 3px grey;
@@ -144,4 +157,24 @@ gap:10px;
     box-shadow: 1px 1px 3px grey;
     height: 100px;
     background-color: var(--primary-color);
+}
+
+
+.but_edit{
+    background-color: #2089D5; /* Green */
+  border: none;
+  color: white;
+  border-radius: 11px;
+  /* padding: 60px 359px; */
+  height:35px;
+  width: 459px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 1rem;
+}
+
+.mt-1rem{
+    margin-top:1rem;
 }
